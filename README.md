@@ -1,6 +1,9 @@
-# KHU Blog Django Assignment
+# KHU Mobweb Django Assignments
 
-Chapter 14 assignment: `HTML 시작하기 - 맞춤형 템플릿 만들기`.
+Assignments deployed with Django for PythonAnywhere.
+
+- Root page: Chapter 16 실습 과제 09, `HTML5 문서 구조와 멀티미디어 태그`
+- `/django/`: Chapter 14 assignment, `HTML 시작하기 - 맞춤형 템플릿 만들기`
 
 ## Local Run
 
@@ -49,8 +52,8 @@ from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
 ```
 
-Your submission URL will be:
+Your Chapter 16 submission URL will be:
 
 ```text
-https://<your-pythonanywhere-username>.pythonanywhere.com/
+https://ystc1247.pythonanywhere.com/
 ```

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="ystc1247">
+    <meta name="keywords" content="HTML5, document structure, multimedia tags">
+    <meta name="description" content="실습 과제 09: HTML5 문서 구조와 멀티미디어 태그">
+    <title>실습 과제 09</title>
+    <style>
+        body {
+            margin: 0;
+            color: #1f2933;
+            font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+            background: #f5f7fb;
+        }
+
+        header {
+            padding: 28px 40px 18px;
+            color: white;
+            background: #1d4ed8;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 12px;
+            font-size: 34px;
+        }
+
+        header hr {
+            width: 50%;
+            height: 10px;
+            border: 0;
+            background: #facc15;
+        }
+
+        nav {
+            padding: 10px 40px;
+            background: #dbeafe;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 12px;
+            color: #1e40af;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            gap: 24px;
+            max-width: 1100px;
+            margin: 28px auto;
+            padding: 0 24px;
+        }
+
+        section {
+            flex: 1;
+            padding: 24px;
+            background: white;
+            border-top: 10px solid #2563eb;
+        }
+
+        article h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        article p {
+            line-height: 1.8;
+            word-break: keep-all;
+        }
+
+        figure {
+            margin: 24px 0 0;
+            text-align: center;
+        }
+
+        figure img {
+            width: 50%;
+            min-width: 220px;
+            max-width: 420px;
+            border: 10px solid #bfdbfe;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            color: #52606d;
+            font-size: 14px;
+        }
+
+        aside {
+            width: 260px;
+            padding: 24px;
+            background: #fff7ed;
+            border-top: 10px solid #f97316;
+        }
+
+        aside h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        aside ul {
+            padding-left: 20px;
+            line-height: 1.9;
+        }
+
+        footer {
+            padding: 20px 40px;
+            color: white;
+            background: #111827;
+            text-align: center;
+        }
+
+        @media (max-width: 760px) {
+            main {
+                flex-direction: column;
+            }
+
+            aside {
+                width: auto;
+            }
+
+            header hr,
+            figure img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 문서 구조와 멀티미디어 태그</h1>
+        <hr>
+        <p>실습 과제 09 - 10pixel / 50% / section / aside / footer</p>
+    </header>
+
+    <nav>
+        <a href="#poem">자화상</a>
+        <a href="#poems">윤동주 시인의 다른 시</a>
+        <a href="#footer">사이트 정보</a>
+    </nav>
+
+    <main>
+        <section id="poem">
+            <article>
+                <h2>자화상 - 윤동주</h2>
+                <p>산모퉁이를 돌아 논가 외딴 우물을 홀로 찾아가선 가만히 들여다봅니다.</p>
+                <p>우물 속에는 달이 밝고 구름이 흐르고 하늘이 펼치고 파아란 바람이 불고 가을이 있습니다.</p>
+                <p>그리고 한 사나이가 있습니다.</p>
+                <p>어쩐지 그 사나이가 미워져 돌아갑니다.</p>
+                <p>돌아가다 생각하니 그 사나이가 가엾어집니다. 도로 가 들여다보니 사나이는 그대로 있습니다.</p>
+                <p>다시 그 사나이가 미워져 돌아갑니다.</p>
+                <p>돌아가다 생각하니 그 사나이가 그리워집니다.</p>
+                <p>우물 속에는 달이 밝고 구름이 흐르고 하늘이 펼치고 파아란 바람이 불고 가을이 있고 추억처럼 사나이가 있습니다.</p>
+
+                <figure>
+                    <img
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23dbeafe'/%3E%3Ccircle cx='505' cy='78' r='42' fill='%23fef3c7'/%3E%3Cpath d='M0 260 C120 210 210 250 320 210 C430 170 500 215 640 176 L640 360 L0 360 Z' fill='%2393c5fd'/%3E%3Cellipse cx='320' cy='250' rx='150' ry='54' fill='%231e3a8a' opacity='.7'/%3E%3Cellipse cx='320' cy='250' rx='108' ry='32' fill='%23bfdbfe' opacity='.65'/%3E%3Ctext x='320' y='272' text-anchor='middle' fill='%23ffffff' font-size='34' font-family='Arial'%3EHTML5%3C/text%3E%3C/svg%3E"
+                        alt="HTML5 멀티미디어 이미지">
+                    <figcaption>[그림1] img 태그와 figure 태그를 사용한 멀티미디어 영역</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <aside id="poems">
+            <h2>윤동주 시인의 다른 시</h2>
+            <ul>
+                <li>서시</li>
+                <li>자화상</li>
+                <li>눈오는 지도</li>
+                <li>새로운 길</li>
+                <li>길</li>
+                <li>별 헤는 밤</li>
+                <li>쉽게 씌어진 시</li>
+                <li>참회록</li>
+                <li>못 자는 밤</li>
+                <li>비오는 밤</li>
+                <li>소낙비</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer id="footer">
+        <small>&copy; 모바일/웹서비스프로그래밍 2026 - ystc1247.pythonanywhere.com</small>
+    </footer>
+</body>
+</html>
