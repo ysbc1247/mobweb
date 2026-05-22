@@ -8,7 +8,7 @@ class PostListViewTests(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, '실습 과제 09')
-        self.assertContains(response, '자화상 - 윤동주')
+        self.assertContains(response, '광야 - 이육사')
         self.assertContains(response, 'section / aside / footer')
 
     def test_post_list_renders_custom_template(self):
