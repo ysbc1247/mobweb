@@ -22,6 +22,8 @@ class PostListViewTests(TestCase):
         self.assertContains(response, 'Web Service programming blog')
         self.assertContains(response, 'Django template practice')
         self.assertContains(response, 'CSS styling with static files')
+        self.assertContains(response, 'intruder-image-list')
+        self.assertContains(response, '/media/intruder_image/')
 
     def test_post_detail_renders_post_content(self):
         author = get_user_model().objects.get(username='ystc1247')
@@ -37,3 +39,4 @@ class PostListViewTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Detail test post')
         self.assertContains(response, 'This post checks the detail template.')
+        self.assertContains(response, 'intruder-image-detail')

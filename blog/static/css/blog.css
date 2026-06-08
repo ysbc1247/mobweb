@@ -60,3 +60,22 @@ h1, h2, h3, h4 {
 .post h1 a:visited {
     color: #000000;
 }
+
+.intruder-image-list {
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    margin-top: 15px;
+}
+
+.intruder-image-detail {
+    width: 640px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+}

@@ -1,0 +1,2 @@
+GitHub URL: https://github.com/ysbc1247/mobweb
+PythonAnywhere URL: https://ystc1247.pythonanywhere.com/

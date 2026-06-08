@@ -3,7 +3,9 @@
 Assignments deployed with Django for PythonAnywhere.
 
 - Root page: Chapter 17, `Django 템플릿과 CSS 꾸미기`
+- Root page now also includes Chapter 18 image-blog output from pages 6-13.
 - `/html5/`: Chapter 16 실습 과제 09, `HTML5 문서 구조와 멀티미디어 태그`
+- `submission/ch19_fixed_game.html`: Chapter 19 JavaScript corrected game code.
 
 ## Local Run
 
@@ -73,4 +75,18 @@ Then reload the web app from the PythonAnywhere Web tab.
 
 ```text
 https://ystc1247.pythonanywhere.com/
+```
+
+## Current Submission Files
+
+```text
+submission/ch18_urls.txt
+submission/ch18_images/ch18_01_post_list.png
+submission/ch18_images/ch18_02_post_detail.png
+submission/ch18_images/ch18_03_media_image.png
+submission/ch19_fixed_game.html
+submission/ch19_images/ch19_game_01_start.png
+submission/ch19_images/ch19_game_02_playing.png
+submission/ch19_images/ch19_game_03_finished.png
+submission/submission_checklist.txt
 ```
