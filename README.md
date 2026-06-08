@@ -79,14 +79,6 @@ https://ystc1247.pythonanywhere.com/
 
 ## Current Submission Files
 
-```text
-submission/ch18_urls.txt
-submission/ch18_images/ch18_01_post_list.png
-submission/ch18_images/ch18_02_post_detail.png
-submission/ch18_images/ch18_03_media_image.png
-submission/ch19_fixed_game.html
-submission/ch19_images/ch19_game_01_start.png
-submission/ch19_images/ch19_game_02_playing.png
-submission/ch19_images/ch19_game_03_finished.png
-submission/submission_checklist.txt
-```
+Chapter 18 files are under `submission/ch18/`.
+Chapter 19 files are under `submission/ch19/`.
+Use `submission/submission_checklist.txt` for the separated file list.

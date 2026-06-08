@@ -1,28 +1,26 @@
-Chapter 18 Django 이미지 블로그와 REST API_v1.2
-Submit these two URLs as text:
-1. GitHub URL: https://github.com/ysbc1247/mobweb
-2. PythonAnywhere URL: https://ystc1247.pythonanywhere.com/
+Use these separated folders. Do not submit everything as one mixed batch.
 
-Submit these step/result capture images:
-1. submission/ch18_images/ch18_01_post_list.png
-2. submission/ch18_images/ch18_02_post_detail.png
-3. submission/ch18_images/ch18_03_media_image.png
+Chapter 18 submission folder:
+submission/ch18/
 
-PythonAnywhere update commands:
-cd ~/mobweb
-git pull
-source venv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
-Reload the web app from the PythonAnywhere Web tab.
+Chapter 18 files:
+1. submission/ch18/urls.txt
+2. submission/ch18/submit_ch18.txt
+3. submission/ch18/images/ch18_01_post_list.png
+4. submission/ch18/images/ch18_02_post_detail.png
+5. submission/ch18/images/ch18_03_media_image.png
 
-Chapter 19 JavaScript
-Submit this corrected HTML code file:
-1. submission/ch19_fixed_game.html
+Chapter 18 text URLs:
+GitHub URL: https://github.com/ysbc1247/mobweb
+PythonAnywhere URL: https://ystc1247.pythonanywhere.com/
 
-Submit these game process capture images:
-1. submission/ch19_images/ch19_game_01_start.png
-2. submission/ch19_images/ch19_game_02_playing.png
-3. submission/ch19_images/ch19_game_03_finished.png
+Chapter 19 submission folder:
+submission/ch19/
 
-Note: The Chapter 19 PDF/source file was not present in the provided local files. The submitted HTML is a corrected, self-contained JavaScript canvas game with the bug fixes documented in comments at the top of its script.
+Chapter 19 files:
+1. submission/ch19/js_test.html
+2. submission/ch19/submit_ch19.txt
+3. submission/ch19/images/ch19_01_start.png
+4. submission/ch19/images/ch19_02_too_low.png
+5. submission/ch19/images/ch19_03_too_high.png
+6. submission/ch19/images/ch19_04_correct.png

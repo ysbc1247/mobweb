@@ -1,0 +1,19 @@
+Chapter 18 Django 이미지 블로그와 REST API
+
+Submit these two URLs as text:
+1. GitHub URL: https://github.com/ysbc1247/mobweb
+2. PythonAnywhere URL: https://ystc1247.pythonanywhere.com/
+
+Submit these step/result capture images:
+1. images/ch18_01_post_list.png
+2. images/ch18_02_post_detail.png
+3. images/ch18_03_media_image.png
+
+PythonAnywhere update commands:
+cd ~/mobweb
+git pull
+source venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+
+Then reload the PythonAnywhere web app.

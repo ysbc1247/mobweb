@@ -15,6 +15,15 @@ class PostListViewTests(TestCase):
         self.assertContains(response, '광야 - 이육사')
         self.assertContains(response, 'section / aside / footer')
 
+    def test_js_test_renders_number_guessing_game(self):
+        response = self.client.get(reverse('js_test'))
+
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, 'Number guessing game')
+        self.assertContains(response, 'Math.floor(Math.random() * 100) + 1')
+        self.assertContains(response, "document.querySelector('.lowOrHi')")
+        self.assertContains(response, "guessSubmit.addEventListener('click', checkGuess)")
+
     def test_post_list_renders_ch17_blog_posts(self):
         response = self.client.get(reverse('post_list'))
 

@@ -1,0 +1,16 @@
+Chapter 19 자바스크립트(JavaScript)
+
+Submit the corrected HTML code:
+1. js_test.html
+
+Submit these game-process capture images:
+1. images/ch19_01_start.png
+2. images/ch19_02_too_low.png
+3. images/ch19_03_too_high.png
+4. images/ch19_04_correct.png
+
+Corrected bugs from pages 22-26:
+1. Math.floor(Math.random()) + 1 -> Math.floor(Math.random() * 100) + 1
+2. document.querySelector('lowOrHi') -> document.querySelector('.lowOrHi')
+3. guessSubmit.addeventListener(...) -> guessSubmit.addEventListener(...)
+4. resetButton.addeventListener(...) -> resetButton.addEventListener(...)

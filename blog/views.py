@@ -51,3 +51,7 @@ def post_edit(request, pk):
 
 def assignment09(request):
     return render(request, 'blog/assignment09.html', {})
+
+
+def js_test(request):
+    return render(request, 'blog/js_test.html', {})
