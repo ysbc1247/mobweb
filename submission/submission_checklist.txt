@@ -24,3 +24,21 @@ Chapter 19 files:
 4. submission/ch19/images/ch19_02_too_low.png
 5. submission/ch19/images/ch19_03_too_high.png
 6. submission/ch19/images/ch19_04_correct.png
+
+Chapter 20 submission folder:
+submission/ch20/
+
+Chapter 20 files:
+1. submission/ch20/urls.txt
+2. submission/ch20/submit_ch20.txt
+3. submission/ch20/images/ch20_01_api_endpoint_get.png
+4. submission/ch20/images/ch20_02_android_post_response.png
+5. submission/ch20/images/ch20_03_post_list_after_android_post.png
+6. submission/ch20/images/ch20_04_android_source_summary.png
+7. submission/ch20/android/PhotoBlog/app/src/main/AndroidManifest.xml
+8. submission/ch20/android/PhotoBlog/app/src/main/res/layout/activity_main.xml
+9. submission/ch20/android/PhotoBlog/app/src/main/java/com/example/photoblog/MainActivity.java
+
+Chapter 20 text URLs:
+GitHub URL: https://github.com/ysbc1247/mobweb
+PythonAnywhere URL: https://ystc1247.pythonanywhere.com/

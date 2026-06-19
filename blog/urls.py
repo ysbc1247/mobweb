@@ -10,4 +10,5 @@ urlpatterns = [
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path('html5/', views.assignment09, name='assignment09'),
     path('js-test/', views.js_test, name='js_test'),
+    path('api_root/Post/', views.api_post_collection, name='api_post_collection'),
 ]

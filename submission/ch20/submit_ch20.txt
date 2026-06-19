@@ -1,0 +1,37 @@
+Chapter 20 안드로이드 포토 블로그 Part01
+
+Submit these URLs as text:
+1. GitHub URL: https://github.com/ysbc1247/mobweb
+2. PythonAnywhere URL: https://ystc1247.pythonanywhere.com/
+
+Submit these test/result images:
+1. images/ch20_01_api_endpoint_get.png
+2. images/ch20_02_android_post_response.png
+3. images/ch20_03_post_list_after_android_post.png
+4. images/ch20_04_android_source_summary.png
+
+Android source files included:
+1. android/PhotoBlog/app/src/main/AndroidManifest.xml
+2. android/PhotoBlog/app/src/main/res/layout/activity_main.xml
+3. android/PhotoBlog/app/src/main/java/com/example/photoblog/MainActivity.java
+
+PythonAnywhere update commands:
+cd ~/mobweb
+git pull
+source venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+
+Then reload the PythonAnywhere web app.
+
+After reload, Android app POST target:
+https://ystc1247.pythonanywhere.com/api_root/Post/
+
+Implemented page-by-page checklist:
+- p4: PhotoBlog Android source folder prepared.
+- p5: INTERNET, READ_MEDIA_IMAGES, READ_EXTERNAL_STORAGE, cleartext traffic manifest settings added.
+- p6: activity_main.xml with Upload Photo button added.
+- p7-p17: MainActivity.java imports, permission flow, image picker, URI path helper, and JSON POST upload code added.
+- p10: Django ALLOWED_HOSTS includes 10.0.2.2 and .pythonanywhere.com.
+- p16-p17: Django REST endpoint accepts Android JSON POST at /api_root/Post/.
+- p18-p19: Test evidence images show server/API response and default-image Post creation.

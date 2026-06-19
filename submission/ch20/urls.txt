@@ -1,0 +1,3 @@
+GitHub URL: https://github.com/ysbc1247/mobweb
+PythonAnywhere URL: https://ystc1247.pythonanywhere.com/
+PythonAnywhere REST endpoint: https://ystc1247.pythonanywhere.com/api_root/Post/
