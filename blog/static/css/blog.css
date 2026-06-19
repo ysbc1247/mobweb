@@ -52,6 +52,17 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
+.upload-menu,
+.upload-menu:hover,
+.upload-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 14px 20px 0 0;
+    text-decoration: none;
+}
+
 .post {
     margin-bottom: 70px;
 }

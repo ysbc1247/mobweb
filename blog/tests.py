@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model
 import json
 
+from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
@@ -73,3 +74,29 @@ class PostListViewTests(TestCase):
         self.assertEqual(data['title'], '안드로이드-REST API 테스트')
         self.assertIn('/media/intruder_image/default_error.png', data['image'])
         self.assertTrue(Post.objects.filter(title='안드로이드-REST API 테스트').exists())
+
+    def test_photo_upload_page_accepts_image(self):
+        response = self.client.get(reverse('photo_upload'))
+
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, 'Upload Photo')
+        self.assertContains(response, 'type="file"')
+
+        image = SimpleUploadedFile(
+            'test.gif',
+            (
+                b'GIF87a\x01\x00\x01\x00\x80\x00\x00\x00\x00\x00'
+                b'\xff\xff\xff,\x00\x00\x00\x00\x01\x00\x01\x00'
+                b'\x00\x02\x02D\x01\x00;'
+            ),
+            content_type='image/gif',
+        )
+        response = self.client.post(reverse('photo_upload'), {
+            'title': 'Web upload test',
+            'text': 'Uploaded from browser form.',
+            'image': image,
+        })
+
+        self.assertEqual(response.status_code, 302)
+        post = Post.objects.get(title='Web upload test')
+        self.assertIn('intruder_image/', post.image.name)

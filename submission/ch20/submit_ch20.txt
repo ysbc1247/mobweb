@@ -15,6 +15,9 @@ PythonAnywhere-specific verification images:
 2. images/ch20_02_pythonanywhere_android_post_response.png
 3. images/ch20_03_pythonanywhere_post_list_after_android_post.png
 
+Browser upload UI verification image:
+1. images/ch20_05_web_upload_ui.png
+
 Android source files included:
 1. android/PhotoBlog/app/src/main/AndroidManifest.xml
 2. android/PhotoBlog/app/src/main/res/layout/activity_main.xml
@@ -32,6 +35,9 @@ Then reload the PythonAnywhere web app.
 After reload, Android app POST target:
 https://ystc1247.pythonanywhere.com/api_root/Post/
 
+Browser image upload UI:
+https://ystc1247.pythonanywhere.com/upload/
+
 Implemented page-by-page checklist:
 - p4: PhotoBlog Android source folder prepared.
 - p5: INTERNET, READ_MEDIA_IMAGES, READ_EXTERNAL_STORAGE, cleartext traffic manifest settings added.
@@ -46,3 +52,4 @@ Part01 selects an image in Android and passes its path into uploadImage(filePath
 jsonObject.put("image", imageUrl). Therefore this part does not upload binary image data from Android yet.
 The Django ImageField/media handling is included from Ch18, and for Ch20 Part01 the created Android REST API post
 uses the default image, matching the p19 note: "Post 객체 생성시 이미지가 없어 기본 이미지 적용 됨".
+For browser-side image upload, the website includes /upload/ with a visible file chooser.
