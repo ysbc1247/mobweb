@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Ch20 PythonAnywhere Android POST Test Result</title>
+<style>
+body { font-family: Arial, "Apple SD Gothic Neo", sans-serif; margin: 32px; background: #f8fafc; color: #0f172a; }
+.status { padding: 12px 16px; background: #dcfce7; border-left: 8px solid #16a34a; font-weight: bold; }
+pre { padding: 16px; background: #111827; color: #e5e7eb; border-radius: 8px; overflow: auto; }
+section { margin-bottom: 24px; }
+</style>
+</head>
+<body>
+<h1>Ch20 PythonAnywhere Android 연동 테스트 결과</h1>
+<p class="status">Android-style JSON POST succeeded on PythonAnywhere. Django created a Post and applied the default image.</p>
+<section><h2>POST URL</h2><pre>https://ystc1247.pythonanywhere.com/api_root/Post/</pre></section>
+<section><h2>Request Payload</h2><pre>{
+  "author": 1,
+  "title": "안드로이드-REST API 테스트",
+  "text": "안드로이드로 작성된 REST API 테스트 입력입니다.",
+  "created_date": "2024-06-03T18:34:00+09:00",
+  "published_date": "2024-06-03T18:34:00+09:00"
+}</pre></section>
+<section><h2>Response JSON</h2><pre>{
+  "id": 3,
+  "author": 1,
+  "title": "안드로이드-REST API 테스트",
+  "text": "안드로이드로 작성된 REST API 테스트 입력입니다.",
+  "created_date": "2024-06-03T18:34:00+09:00",
+  "published_date": "2024-06-03T18:34:00+09:00",
+  "image": "https://ystc1247.pythonanywhere.com/media/intruder_image/default_error.png"
+}</pre></section>
+</body>
+</html>

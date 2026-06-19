@@ -10,6 +10,11 @@ Submit these test/result images:
 3. images/ch20_03_post_list_after_android_post.png
 4. images/ch20_04_android_source_summary.png
 
+PythonAnywhere-specific verification images:
+1. images/ch20_01_pythonanywhere_api_get.png
+2. images/ch20_02_pythonanywhere_android_post_response.png
+3. images/ch20_03_pythonanywhere_post_list_after_android_post.png
+
 Android source files included:
 1. android/PhotoBlog/app/src/main/AndroidManifest.xml
 2. android/PhotoBlog/app/src/main/res/layout/activity_main.xml
@@ -35,3 +40,9 @@ Implemented page-by-page checklist:
 - p10: Django ALLOWED_HOSTS includes 10.0.2.2 and .pythonanywhere.com.
 - p16-p17: Django REST endpoint accepts Android JSON POST at /api_root/Post/.
 - p18-p19: Test evidence images show server/API response and default-image Post creation.
+
+Important image-handling note:
+Part01 selects an image in Android and passes its path into uploadImage(filePath), but the PDF code comments out
+jsonObject.put("image", imageUrl). Therefore this part does not upload binary image data from Android yet.
+The Django ImageField/media handling is included from Ch18, and for Ch20 Part01 the created Android REST API post
+uses the default image, matching the p19 note: "Post 객체 생성시 이미지가 없어 기본 이미지 적용 됨".

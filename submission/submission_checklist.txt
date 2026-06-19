@@ -35,9 +35,12 @@ Chapter 20 files:
 4. submission/ch20/images/ch20_02_android_post_response.png
 5. submission/ch20/images/ch20_03_post_list_after_android_post.png
 6. submission/ch20/images/ch20_04_android_source_summary.png
-7. submission/ch20/android/PhotoBlog/app/src/main/AndroidManifest.xml
-8. submission/ch20/android/PhotoBlog/app/src/main/res/layout/activity_main.xml
-9. submission/ch20/android/PhotoBlog/app/src/main/java/com/example/photoblog/MainActivity.java
+7. submission/ch20/images/ch20_01_pythonanywhere_api_get.png
+8. submission/ch20/images/ch20_02_pythonanywhere_android_post_response.png
+9. submission/ch20/images/ch20_03_pythonanywhere_post_list_after_android_post.png
+10. submission/ch20/android/PhotoBlog/app/src/main/AndroidManifest.xml
+11. submission/ch20/android/PhotoBlog/app/src/main/res/layout/activity_main.xml
+12. submission/ch20/android/PhotoBlog/app/src/main/java/com/example/photoblog/MainActivity.java
 
 Chapter 20 text URLs:
 GitHub URL: https://github.com/ysbc1247/mobweb
